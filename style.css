@@ -1,0 +1,26 @@
+  .season-winter body {
+    background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+  }
+  
+  .season-spring body {
+    background: linear-gradient(to bottom, #ffe4ec, #f8bbd0);
+  }
+  
+  .season-summer body {
+    background: linear-gradient(to bottom, #fff8e1, #ffe082);
+  }
+  
+  .season-autumn body {
+    background: linear-gradient(to bottom, #fff3e0, #ffcc80);
+  }
+  
+  .group:hover ul {
+    display: block;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

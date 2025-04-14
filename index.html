@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant Seasonal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen flex flex-col transition-colors duration-700 text-gray-900 pt-0">
+    <canvas id="particles" class="fixed top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>
+
+    <nav class="w-full max-w-5xl flex justify-between items-center p-4 rounded-2xl mt-5 mx-auto shadow-lg bg-white/80 backdrop-blur-md relative z-10">
+      <div class="text-2xl font-bold">MaThemplate</div>
+      <ul class="flex gap-6 text-lg items-center">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+
+        <li class="relative" x-data="{ open: false }">
+          <button @click="open = !open" class="hover:underline focus:outline-none">Add ▼</button>
+          <ul x-show="open" @click.outside="open = false" class="absolute right-0 mt-2 w-40 bg-white border rounded-xl shadow-md p-2 text-sm z-50">
+            <li><a href="https://math.naboj.org/gb/en/" class="block px-4 py-2 hover:bg-gray-100 rounded">Naboj</a></li>
+            <li><a href="https://purplecomet.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">Purple Comet</a></li>
+            <li><a href="https://www.e3.ro/teste-bacalaureat-2021/" class="block px-4 py-2 hover:bg-gray-100 rounded">e3 - Matematica</a></li>
+            <li><a href="https://web.evanchen.cc/olympiad.html" class="block px-4 py-2 hover:bg-gray-100 rounded">Evan Chen</a></li>
+            <li><a href="https://www.imo-official.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">IMO</a></li>
+            <li><a href="https://ssmr.ro/" class="block px-4 py-2 hover:bg-gray-100 rounded">ssmr</a></li>
+            <li><a href="https://cms.math.ca/competitions/problem-solving-resources/" class="block px-4 py-2 hover:bg-gray-100 rounded">CMS - Math</a></li>
+            <li><a href="https://drive.google.com/drive/u/0/folders/1InPFL0vpxZIImIMITM1raY5HXb_tpf6a?fbclid=IwAR3i07RkxQyTinN_dWJUgJlKZjVgmpBMYuMZUMwbcul6iE7Nh9yI366_0HM" class="block px-4 py-2 hover:bg-gray-100 rounded">Olimpiade Romania</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex-grow flex items-center justify-center">
+      <main class="w-full max-w-3xl bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-2xl text-center">
+        <h1 class="text-4xl font-extrabold mb-4">Template Site for yeah</h1>
+        <p class="text-lg mb-6">Very cool site!</p>
+        <button class="bg-black text-white px-6 py-2 rounded-2xl hover:opacity-90 transition">Get Started</button>
+      </main>
+    </div>
+
+    <footer class="mt-12 text-sm text-gray-600 text-center mb-4">
+      &copy; 2025 MATH All rights reserved.
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="season.js"></script>
+  </body>
+</html>
