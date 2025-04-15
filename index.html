@@ -16,8 +16,6 @@
         <div class="text-2xl font-bold">MaThemplate</div>
         <ul class="hidden md:flex gap-6 text-lg items-center">
           <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">About</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
           <li class="relative" x-data="{ open: false }">
             <button @click="open = !open" class="hover:underline focus:outline-none">Useful Links ▼</button>
             <ul x-show="open" @click.outside="open = false" class="absolute right-0 mt-2 w-40 bg-white border rounded-xl shadow-md p-2 text-sm z-50">
@@ -43,14 +41,17 @@
 
       <div x-show="open" class="md:hidden mt-4 space-y-2 text-lg">
         <a href="#" class="block hover:underline">Home</a>
-        <a href="#" class="block hover:underline">About</a>
-        <a href="#" class="block hover:underline">Contact</a>
         <div x-data="{ dropdown: false }" class="relative">
           <button @click="dropdown = !dropdown" class="hover:underline w-full text-left">Add ▼</button>
           <div x-show="dropdown" @click.outside="dropdown = false" class="mt-2 space-y-1 bg-white border rounded-xl shadow-md p-2 text-sm">
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Blog</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Event</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Project</a>
+            <a href="https://math.naboj.org/gb/en/" class="block px-4 py-2 hover:bg-gray-100 rounded">Naboj</a>
+            <a href="https://purplecomet.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">Purple Comet</a>
+            <a href="https://www.e3.ro/teste-bacalaureat-2021/" class="block px-4 py-2 hover:bg-gray-100 rounded">e3 - Matematica</a>
+            <a href="https://web.evanchen.cc/olympiad.html" class="block px-4 py-2 hover:bg-gray-100 rounded">Evan Chen</a>
+            <a href="https://www.imo-official.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">IMO</a>
+            <a href="https://ssmr.ro/" class="block px-4 py-2 hover:bg-gray-100 rounded">SSMR</a>
+            <a href="https://cms.math.ca/competitions/problem-solving-resources/" class="block px-4 py-2 hover:bg-gray-100 rounded">CMS - Canada</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1InPFL0vpxZIImIMITM1raY5HXb_tpf6a" class="block px-4 py-2 hover:bg-gray-100 rounded">Olimpiade Matematica RO</a>
           </div>
         </div>
       </div>
@@ -64,8 +65,16 @@
       </main>
     </div>
 
-    <footer class="mt-12 text-sm text-gray-600 text-center mb-4">
-      &copy; 2025 MATH All rights reserved.
+    <hr class="w-full max-w-5xl mx-auto border-t border-gray-300 mb-4" />
+
+    <footer class="w-full max-w-5xl mx-auto mb-6 px-4 text-sm text-gray-700 flex flex-col md:flex-row justify-between items-center gap-2">
+      <div>&copy; 2025 MaThemplate</div>
+      <div class="flex gap-4 flex-wrap justify-center">
+        <a href="#" class="hover:underline">Terms of Service</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Contact Us</a>
+        <a href="#" class="hover:underline">About Us</a>
+      </div>
     </footer>
 
     <script src="particles.js"></script>
