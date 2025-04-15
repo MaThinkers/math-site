@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elegant Seasonal Website</title>
+    <title>MaThemplate</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
@@ -19,11 +19,16 @@
           <li><a href="#" class="hover:underline">About</a></li>
           <li><a href="#" class="hover:underline">Contact</a></li>
           <li class="relative" x-data="{ open: false }">
-            <button @click="open = !open" class="hover:underline focus:outline-none">Add ▼</button>
+            <button @click="open = !open" class="hover:underline focus:outline-none">Useful Links ▼</button>
             <ul x-show="open" @click.outside="open = false" class="absolute right-0 mt-2 w-40 bg-white border rounded-xl shadow-md p-2 text-sm z-50">
-              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Blog</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Event</a></li>
-              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Add Project</a></li>
+              <li><a href="https://math.naboj.org/gb/en/" class="block px-4 py-2 hover:bg-gray-100 rounded">Naboj</a></li>
+              <li><a href="https://purplecomet.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">Purple Comet</a></li>
+              <li><a href="https://www.e3.ro/teste-bacalaureat-2021/" class="block px-4 py-2 hover:bg-gray-100 rounded">e3 - Matematica</a></li>
+              <li><a href="https://web.evanchen.cc/olympiad.html" class="block px-4 py-2 hover:bg-gray-100 rounded">Evan Chen</a></li>
+              <li><a href="https://www.imo-official.org/" class="block px-4 py-2 hover:bg-gray-100 rounded">IMO</a></li>
+              <li><a href="https://ssmr.ro/" class="block px-4 py-2 hover:bg-gray-100 rounded">SSMR</a></li>
+              <li><a href="https://cms.math.ca/competitions/problem-solving-resources/" class="block px-4 py-2 hover:bg-gray-100 rounded">CMS - Canada</a></li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/1InPFL0vpxZIImIMITM1raY5HXb_tpf6a?fbclid=IwAR3i07RkxQyTinN_dWJUgJlKZjVgmpBMYuMZUMwbcul6iE7Nh9yI366_0HM" class="block px-4 py-2 hover:bg-gray-100 rounded">Olimpiade Matematica RO</a></li>
             </ul>
           </li>
         </ul>
